@@ -6,29 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        
-    </style>
+    
 </head>
 <body>
-    <nav class="flex bg">
-        <div class="">
-            Visual Studio Code
+    <!-- nav bar -->
+    <nav class="flex justify-between px-3 bg-[#2c2c32]">
+        <div class="flex gap-5 p-3 ">
+            <div class="flex text-white items-center gap-3">
+                <img class="w-8 h-8" src="./assets/vsCodeIcon.png" alt="">
+                <h1>Visual Studio Code</h1>  
+            </div>
+            <ul class="flex gap-3 items-center">    
+                <li class="text-slate-600">Docs</li>
+                <li class="text-slate-600">Updates</li>
+                <li class="text-slate-600">Blog</li>
+                <li class="text-slate-600">API</li>
+                <li class="text-slate-600">Extensions</li>
+                <li class="text-slate-600">FAQ</li>
+                <li class="text-slate-600">Learn</li>
+            </ul>
         </div>
-        <ul class="flex">
-            <li>Docs</li>
-            <li>Updates</li>
-            <li>Blog</li>
-            <li>API</li>
-            <li>Extensions</li>
-            <li>FAQ</li>
-            <li>Learn</li>
-        </ul>
-        <div class="">
-            <input type="text" value="">Search Docs
-            <button>Download</button>
+        <div class="flex">
+            <div class="flex bg-[#3d3d42]  items-center gap-2 p-3">
+                <img class=" w-5 h-5 flex items-center" src="./assets/searchIcon.svg" alt="">
+                <input class="bg-[#3d3d42] hover:bg-[#525257] h-[100%]" type="text" placeholder="Search Docs">
+            </div>
+            <div class="flex bg-[#005BA4] items-center gap-2 p-3 px-6">
+                <img class="w-5 h-5" src="./assets/downloadIcon.svg" alt=""> 
+                <button class="">Download</button>
+            </div>
+            
+
         </div>
     </nav>
-    <section class=""><p>Version 1.73 is now available! Read about the new features and fixes from October</p></section>
+    <!-- version section -->
+    <section class="bg-[#25252B] flex justify-center text-gray-300 h-11 items-center"><p> <span class="text-[#1493FF]">Version 1.73</span>  is now available! Read about the new features and fixes from October</p></section>
+
+    <section class="flex bg-[#2C2C32]">
+        <div class="flex flex-col">
+            <h2> <div class="text-[40px] text-white">Code editing.</div> <div class="text-[42px] text-white">Redefined.</div></h2>
+            <p class="">Free. Built on open source. Runs everywhere</p>
+            <button class="bg-[#005BA4]">Download for Windows <div>Stable Build</div></button>
+            <div>Web, Insider edition, or other platforms</div>
+            
+            <p>By using VS Code, you agree to its</p>
+            <p>license and privacy statement</p>
+        </div>
+        <img class="w-2/3 h-1/2 flex" src="./assets/codeImage.png" alt="">
+    </section>
+
 </body>
 </html>
+
+
+
+
+
+
