@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Crypto Market</title>
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", sans-serif;
+      }
+      body{
+        background-image: url("assets/bg.png");
+        background-position: center;
+        /* background-size: cover; */
+        background-size: 100% 100%;
+        /* background-size: contain; */
+        background-repeat: no-repeat;
+        height: 100vh;
+      }
+      .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        
+        padding: 12px 40px;
+      }
+      .grow-list{
+        margin-right: auto;
+        margin-left: 40px;
+        border-left: 2px solid white;
+        padding: 7px 40px;
+      }
+      .navbar img{
+        width: 120px;
+        height: 40px;
+      }
+      .list{
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+      .list>li{
+        color: white;
+      }
+      .button-small{
+        background-color: rgb(227, 70, 219);
+        border-radius: 8px;
+        color: white;
+        padding: 6px 15px;
+      }
+      .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        
+        color: white;
+      }
+      .hero-heading{
+        font-size: 60px;
+        margin-bottom: 0px;
+        margin: 50px 0 0 0;
+        width: 567px;
+        
+      }
+      
+      .button-large{
+        background-color: rgb(227, 70, 219);
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-size: 15px;
+        margin: 30px;
+        padding: 15px;
+      }
+      .hero-description{
+        margin: 15px 0px;
+      }
+      .list-item:nth-child(1)::after{
+        content:  '\02C5';
+        margin: 0 7px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section aria-label="navbar">
+        <nav class="navbar">
+          <div>
+            <img src="./assets/white-logo.png" alt="logo" class="logo" />
+          </div>
+          <div class="line"></div>
+          <div class="grow-list">
+            <ul class="list">
+              <li class="list-item">Apps</li>
+              <li class="list-item">DAO</li>
+              <li class="list-item">Technology</li>
+              <li class="list-item">Token</li>
+              <li class="list-item">Contributors</li>
+            </ul>
+          </div>
+          <div>
+            <button class="button-small">Buy 1 Token</button>
+          </div>
+        </nav>
+      </section>
+      <!-- Hero Section -->
+      <section aria-label="hero">
+        <div class="hero">
+          <h1 class="hero-heading">Lets build a better tomorrow, together.</h1>
+          <p class="hero-description">
+            Buy 1 Token. Join the DAO. Change the world
+          </p>
+          <button class="button-large">Request Early Access</button>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
