@@ -61,10 +61,10 @@
 
     <section class="h-[128px]">
         <ul class="flex justify-around">
-            <li><img src="./assets/valueprops-top-sprite (1).svg" alt=""> IntelliSense</li>
-            <li>Run and Debug</li>
-            <li>Built-in Git</li>
-            <li>Extensions</li>
+            <li class="text-[#444] font-normal text-xl"><img src="./assets/valueprops-top-sprite (1).svg" alt=""> IntelliSense</li>
+            <li class="text-[#444] font-normal text-xl">Run and Debug</li>
+            <li class="text-[#444] font-normal text-xl">Built-in Git</li>
+            <li class="text-[#444] font-normal text-xl">Extensions</li>
         </ul>
     </section>
     <section class="bg-[#f5f5f5]">
@@ -237,17 +237,43 @@
         </div>
     </section>
     <section class="bg-[#f5f5f5]">
-        <div class="flex">
+        <div class="flex justify-around py-9">
             <span>
-                <div> Want new features sooner?</div>
-                <div> Get the Insiders build instead.</div>
+                <div class="text-[#444] font-semibold text-[23px] "> Want new features sooner?</div>
+                <div class="text-[#444] font-normal text-[20px] "> Get the <a class="text-[#005BA4]" href="">Insiders build</a>  instead.</div>
             </span>
             <span>
-                <div> Use vscode.dev for quick edits online!</div>
-                <div> GitHub, Azure Repos, and local files.</div>
+                <div class="text-[#444] font-semibold text-[23px]  w-[330px] text-center "> Use <a class="text-[#005BA4]" href="">vscode.dev</a>  for quick edits  online!</div>
+                <div class="text-[#444] font-normal text-[20px] "> GitHub, Azure Repos, and local files.</div>
             </span>
         </div>
+        
+        <div class=" px-52 py-5 text-center text-[#6c6c6c] leading-10 ">
+            <h4 class="font-semibold">LICENSE AND PRIVACY TERMS</h4>
+            <p class="font-normal"> By downloading and using Visual Studio Code, you agree to the <a class="text-[#005BA4]" href="">license terms</a>  and <a class="text-[#005BA4]" href="">privacy statement.</a>  VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a class="text-[#005BA4]" href="">How to Disable Crash Reporting</a>  to learn how to disable it.</p>
+            
+        </div>
     </section>
+    <footer class="flex justify-between bg-[#333] text-white py-6 px-5">
+        <div class="flex gap-6 items-center">
+            <div>Hello from Seattle. </div>
+            <a href="">Follow @code</a>
+            <div class="flex gap-2 items-center">
+                <button class="text-[#333] bg-[#eee] flex items-center rounded px-1"><img class="w-[14px] h-[14px]" src="./assets/githubIcon.svg" alt=""> Star</button>
+                <button class="text-[#333] bg-[#eee] rounded px-1">139,738</button>
+            </div>
+        </div>
+        <div class="flex gap-6 ">
+            <a href="">Support</a>
+            <a href="">Privacy</a>
+            <a href="">Terms of Use</a>
+            <a href="">License</a>
+            <div>
+                <img class="h-[20px] w-[90px]" src="./assets/microsoft-logo.png" alt="">
+                <p class="text-sm">2022 Microsoft</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 
