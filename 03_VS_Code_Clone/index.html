@@ -8,9 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     
 </head>
-<body class="">
+<body class="relative">
     <!-- nav bar -->
-    <nav class="flex justify-between px-3 bg-[#2c2c32] ">
+    <nav class="flex justify-between px-3 bg-[#2c2c32] fixed top-0 w-[100vw] z-[1]">
         <div class="flex gap-5 p-[9px] ">
             <div class="flex text-white items-center gap-3">
                 <img class="w-8 h-8" src="./assets/vsCodeIcon.png" alt="">
@@ -40,7 +40,7 @@
         </div>
     </nav>
     <!-- version section -->
-    <section class="bg-[#25252B] flex justify-center text-gray-300 h-11 items-center"><p> <span class="text-[#1493FF]">Version 1.73</span>  is now available! Read about the new features and fixes from October</p></section>
+    <section class="bg-[#25252B] flex justify-center text-gray-300 h-11 items-center relative top-[50px] "><p> <span class="text-[#1493FF]">Version 1.73</span>  is now available! Read about the new features and fixes from October</p></section>
 
     <section class="flex bg-[#2C2C32] justify-between px-12 py-8 text-center ">
         <div class="flex flex-col text-center items-center pt-6">
@@ -61,7 +61,9 @@
 
     <section class="h-[128px]">
         <ul class="flex justify-around">
-            <li class="text-[#444] font-normal text-xl"><img src="./assets/valueprops-top-sprite (1).svg" alt=""> IntelliSense</li>
+            <!-- <img src="./assets/valueprops-top-sprite (1).svg" alt=""> -->
+            <!-- <li  class="text-[#444] font-normal text-xl bg-[url("./assets/valueprops-top-sprite (1).svg")] "> IntelliSense</li> -->
+            <li  class="text-[#444] font-normal text-xl"> IntelliSense</li>
             <li class="text-[#444] font-normal text-xl">Run and Debug</li>
             <li class="text-[#444] font-normal text-xl">Built-in Git</li>
             <li class="text-[#444] font-normal text-xl">Extensions</li>
@@ -153,10 +155,28 @@
                 <div class="flex items-center gap-3"><img class="w-[18px] h-[18px]" src="./assets/download (1).svg" alt=""><div class="text-[21px]">Windows</div> </div>
                 <div class="text-[18px]"> Windows 8,10,11</div>
             </button>
-            <table>
+            <div class="grid grid-flow-col gap-2">
+                <div class="grid text-center">
+                    <div class="font-semibold text-lg text-[#444] ">User Installer</div>
+                    <div class="font-semibold text-lg text-[#444] ">System Installer</div>
+                    <div class="font-semibold text-lg text-[#444] ">.zip</div>
+                </div>
+                <div class="grid grid-cols-3 grid-rows-3 gap-1">
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center">x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x86</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x86</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x86</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                </div>
+            </div>
+            <!-- <table>
                 <tbody class="">
                     <tr class="">
-                        <td class="font-semibold text-lg text-[#444] ">User Installer</td>
+                        <td class="font-semibold text-lg text-[#444] m-2">User Installer</td>
                         <td class="bg-[#0066b8] text-white text-sm rounded-sm py-0 px-[3px]  font-normal m-1">x64</td>
                         <td class="m-2">x86</td>
                         <td>Arm64</td>
@@ -174,7 +194,21 @@
                         <td>Arm64</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
+            <!-- <div class="flex w-[250px] gap-3 border-2 border-solid border-black">
+                <div class="w-[100px]">User Installer System Installer .zip</div>
+                <div class="grid grid-cols-3 grid-rows-3 gap-[2px]"> 
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x64</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x86</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center px-1">Arm64</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x64</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x86</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">Arm64</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x64</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">x86</div>
+                    <div class="bg-[#0066b8] text-white rounded-md text-center">Arm64</div>
+                </div>
+            </div> -->
         </div>
         <div class="flex flex-col items-center ">
             <img class="w-[100px] h-[100px]" src="./assets/linux-logo.png" alt="">
@@ -184,12 +218,33 @@
                     <div class="text-[18px]"> Debian, Ubuntu</div>
                 </button>
                 <button class="bg-[#005BA4] text-white px-5 py-3 my-4">
-                    <div class="flex items-center gap-3"><img class="w-[18px] h-[18px]" src="./assets/download (1).svg" alt=""><div class="text-[21px]">Windows</div> </div>
-                    <div class="text-[18px]"> Red Hat, Fedora,</div>
-                    <div class="text-[18px]"> SUSE</div>
+                    <div class="flex items-center gap-3"><img class="w-[18px] h-[18px]" src="./assets/download (1).svg" alt=""><div class="text-[21px]">.rpm</div> </div>
+                    <div class="text-[18px] "> Red Hat, Fedora,SUSE</div>
+                    <!-- <div class="text-[18px]"> SUSE</div> -->
                 </button>
             </div>
-            <table>
+            <div class="grid grid-flow-col gap-2">
+                <div class="grid text-center">
+                    <div class="font-semibold text-lg text-[#444] ">.deb</div>
+                    <div class="font-semibold text-lg text-[#444] ">.rpm</div>
+                    <div class="font-semibold text-lg text-[#444] ">.tar.gz</div>
+                    <div class="font-semibold text-lg text-[#444] ">Snap</div>
+                </div>
+                <div class="grid grid-cols-3 grid-rows-4 gap-1">
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center">x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm32</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm32</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >x64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm32</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Arm64</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center col-span-2" >Snap Store</div>
+
+                </div>
+            </div>
+            <!-- <table>
                 <tbody class="">
                     <tr class="">
                         <td class="font-semibold text-lg text-[#444] ">.deb</td>
@@ -214,7 +269,7 @@
                         <td class="" colspan="2">Snap Store</td>
                         
                     </tr>
-                </tbody>
+                </tbody> -->
             </table>
         </div>
         <div class="flex flex-col items-center ">
@@ -223,7 +278,18 @@
                 <div class="flex items-center gap-3"><img class="w-[18px] h-[18px]" src="./assets/download (1).svg" alt=""><div class="text-[21px]">Mac</div> </div>
                 <div class="text-[18px]"> macOS 10.11+</div>
             </button>
-            <table>
+            <div class="grid grid-flow-col gap-2">
+                <div class="grid text-center">
+                    <div class="font-semibold text-lg text-[#444] ">.zip</div>
+                    
+                </div>
+                <div class="grid grid-cols-3 grid-rows-1 gap-1">
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center">Universal</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Intel chip</div>
+                    <div class="bg-[#0066b8] text-white text-sm rounded-sm font-normal text-center justify-center" >Apple silicon</div>
+                </div>
+            </div>
+            <!-- <table>
                 <tbody>
                     <tr>
                         <td class="font-semibold text-lg text-[#444] ">.zip</td>
@@ -233,7 +299,7 @@
                     </tr>
                     
                 </tbody>
-            </table>
+            </table> -->
         </div>
     </section>
     <section class="bg-[#f5f5f5]">
