@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+        }
+        .nav,.sec1{
+            background-color: black;
+        }
+        .nav{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 10px ;
+            align-items: center;
+        }
+        .nav-logoImg img{
+            width: 100px;
+
+        }
+        .nav-middle ul{
+            display: flex;
+            gap: 35px;
+        }
+        .nav-end{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .nav-btn,.sec1-btn{
+            background-color: black;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+        .nav-btn img{
+            position: relative;
+            left: 19px;
+        }
+        .sec1-btn img{
+            position: relative;
+            left: 19px;
+        }
+        .nav-end select{
+            background-color: black;
+            color: white;
+            border: none;
+        }
+        .sec1{
+            color: white;
+        }
+        .sec1-heading{
+            font-size: 60px;
+        }
+        .sec1-heading span{
+            color: rgb(228, 24, 228);
+        }
+        .sec1-para{
+            font-size: 17px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-logoImg"><img src="./Project 1- Credit Card Landing Page/Assets/Icons/Logo.svg" alt=""></div>
+        <div class="nav-middle">
+            <ul>
+                <li>Home</li>
+                <li>features</li>
+                <li>Pricing</li>
+                <li>About us</li>
+            </ul>
+        </div>
+        <div class="nav-end">
+            <select name="" id="">
+                <option value="">Eng</option>
+                <option value="">Hindi</option>
+            </select>
+            <button class="nav-btn">
+                <img src="./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg" alt="">
+                Contact us
+            </button>
+        </div>
+    </nav>
+
+    <section class="sec1">
+        <h1 class="sec1-heading">Simplify All Transactions in <span> ONE Card </span></h1>
+        <p class="sec1-para">Hurry up and join now, with this you can manage your daily finances easily and safely</p>
+
+        <button class="sec1-btn">
+            <img src="./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg" alt="">
+            GET STARTED
+            <img src="./Project 1- Credit Card Landing Page/Assets/Icons/RightArrow.svg" alt="">
+        </button>
+
+        <div>
+            <div>
+                <span>42K+</span>
+                <span>Happy Active User</span>
+            </div>
+            <div>
+                <span>12K+</span>
+                <span>Years Experience</span>
+            </div>
+            
+        </div>
+
+        <div>
+            <img src="./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png" alt="">
+            <img src="./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png" alt="">
+        </div>
+    </section>
+
+</body>
+</html>
