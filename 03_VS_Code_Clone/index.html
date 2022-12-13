@@ -12,40 +12,46 @@
     <!-- <div class="opacity-60 fixed w-[100vw] h-[10vh] items-center top-[40vh] flex justify-center bg-red-500 text-blue-900 text-4xl">
         THIS IS FOR EDUCATION PURPOSE ONLY <span class="text-sm relative top-[7px]">by praveer pratap</span> 
     </div> -->
-    <nav class="flex justify-between  px-3 bg-[#2c2c32] fixed top-0 w-[100vw] z-[1] ">
-        <div class="flex gap-5 p-[9px] ">
-            <div class="flex text-white items-center gap-3 cursor-pointer">
-                <img class="w-8 h-8" src="./assets/vsCodeIcon.png" alt="">
-                <h1 class="text-[20px]">Visual Studio Code</h1>  
+</head>
+<body>
+    <section class="bg-[#2c2c32] fixed top-0 z-[1] w-full">
+        <nav class="flex justify-between  px-3 bg-[#2c2c32]  max-w-[1170px]  m-auto">
+            <div class="flex gap-5 p-[9px] ">
+                <div class="flex text-white items-center gap-3 cursor-pointer">
+                    <img class="w-8 h-8" src="./assets/vsCodeIcon.png" alt="">
+                    <h1 class="text-[20px]">Visual Studio Code</h1>  
+                </div>
+                <ul class="flex gap-3 items-center hidden lg:flex">    
+                    <a href="" class="text-slate-400 hover:text-white">Docs</a>
+                    <a href="" class="text-slate-400 hover:text-white">Updates</a>
+                    <a href="" class="text-slate-400 hover:text-white">Blog</a>
+                    <a href="" class="text-slate-400 hover:text-white">API</a>
+                    <a href="" class="text-slate-400 hover:text-white">Extensions</a>
+                    <a href="" class="text-slate-400 hover:text-white">FAQ</a>
+                    <a href="" class="text-slate-400 hover:text-white">Learn</a>
+                </ul>
             </div>
-            <ul class="flex gap-3 items-center hidden lg:flex">    
-                <a href="" class="text-slate-400 hover:text-white">Docs</a>
-                <a href="" class="text-slate-400 hover:text-white">Updates</a>
-                <a href="" class="text-slate-400 hover:text-white">Blog</a>
-                <a href="" class="text-slate-400 hover:text-white">API</a>
-                <a href="" class="text-slate-400 hover:text-white">Extensions</a>
-                <a href="" class="text-slate-400 hover:text-white">FAQ</a>
-                <a href="" class="text-slate-400 hover:text-white">Learn</a>
-            </ul>
-        </div>
-        <div class="flex hidden lg:flex">
-            <form class="flex bg-[#3d3d42] hover:bg-[#525257] items-center gap-2 p-3 ">
-                <img class=" w-5 h-5 flex items-center" src="./assets/searchIcon.svg" alt="">
-                <input class="bg-[#3d3d42] hover:bg-[#525257] h-5  placeholder:text-[white] hidden xl:inline" type="text" placeholder="Search Docs">
-            </form>
-            <div class="flex  items-center gap-2 p-3 px-6 bg-[#0066b8] hover:bg-[#005BA4]">
-                <img class="w-5 h-5" src="./assets/downloadIcon.svg" alt=""> 
-                <button class="text-[white]">Download</button>
+            <div class="flex hidden lg:flex">
+                <div class="flex bg-[#3d3d42] hover:bg-[#525257] items-center gap-2 p-3 ">
+                    <img class=" w-5 h-5 flex items-center" src="./assets/searchIcon.svg" alt="">
+                    <input class="bg-transparent h-5 outline-none  placeholder:text-[white] hidden xl:inline" type="text" placeholder="Search Docs">
+                </div>
+                <div class="flex  items-center gap-2 p-3 px-6 bg-[#0066b8] hover:bg-[#005BA4]">
+                    <img class="w-5 h-5" src="./assets/downloadIcon.svg" alt=""> 
+                    <button class="text-[white]">Download</button>
+                </div>
             </div>
-        </div>
-        <div class="flex lg:hidden items-center ">
-            <i class="fa-solid fa-bars text-white"></i>
-        </div>
-    </nav>
+            <div class="flex lg:hidden items-center  ">
+                <i class="fa-solid fa-bars text-white hover:bg-[#0066b8] p-2 rounded-sm"></i>
+            </div>
+        </nav>
+    </section>
+
     <!-- version section -->
     <section class="bg-[#25252B] flex justify-center text-gray-300 px-[12%] text-center py-[10px] items-center relative top-[50px] "><p> <span class="text-[#1493FF] hover:underline hover:cursor-pointer	">Version 1.73</span>  is now available! Read about the new features and fixes from October <span class="text-[red]">(EDUCATION PURPOSE ONLY)</span> </p></section>
 
-    <section class="block lg:flex bg-[#2C2C32] justify-between px-12 pb-8 pt-[82px] text-center ">
+    <section class="bg-[#2C2C32] w-full">
+    <section class="block lg:flex bg-[#2C2C32] justify-between px-12 pb-8 pt-[82px] text-center m-auto max-w-[1170px] gap-3">
         <div class="flex flex-col text-center items-center lg:pt-6">
             <h2> <div class="text-[48px] text-white font-light leading-[3rem]">Code editing.</div> <div class="text-[50px] text-white">Redefined.</div></h2>
             <p class="text-slate-300 pb-4 text-[20px] font-light">Free. Built on open source. Runs everywhere</p>
@@ -60,13 +66,15 @@
             <a href="" class="text-[#005BA4] text-xs hover:underline ">license and privacy statement</a> 
         </div>
         <div class="flex justify-center m-auto ">
-            <img class="lg:w-2/3 lg:h-1/2 flex " src="./assets/codeImage.png" alt="">
+            <img class=" lg:h-1/2 flex " src="./assets/codeImage.png" alt="">
 
         </div>
     </section>
+    </section>
 
+    
     <section class="">
-        <ul class="grid grid-cols-2 grid-rows-2  lg:flex justify-evenly">
+        <ul class="grid grid-cols-2 grid-rows-2  lg:flex justify-evenly max-w-[1170px] m-auto">
             
             <div class="flex flex-col items-center justify-center hover:bg-[#e3e3e3] w-[100%] lg:w-[20%]">
                 <li  class="bg-[url('./assets/valueprops-top-sprite(1).svg')]  bg-no-repeat h-[5rem] w-[5rem] bg-[length:20.6rem_10.4rem] hover:bg-[0rem_-5.3rem]  relative top-2"> </li>
@@ -86,7 +94,10 @@
             </div>
         </ul>
     </section>
-    <section class="bg-[#f5f5f5] ">
+
+
+    <section class="bg-[#f5f5f5]">
+    <section class="bg-[#f5f5f5] max-w-[1170px] m-auto">
         <div class="block  lg:grid grid-cols-3 p-5 px-16 gap-3">
             <div class="p-[10px] flex flex-row gap-2">
                 <img class="w-16 h-16 rounded-[50%] hover:cursor-pointer" src="./assets/Una.jpg" alt="">
@@ -111,14 +122,19 @@
             </div>
         </div>
     </section>
-    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 ">
+    </section>
+
+
+    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 max-w-[1170px] m-auto">
         <img class="m-[auto] max-w-[70%]" src="./assets/home-intellisense.svg" alt="">
         <div>
             <header class="text-[18px] lg:text-[30px] font-thin text-[#444] pb-[25px] ">Meet IntelliSense.</header>
             <p class=" text-[15px] lg:text-[18px]">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
         </div>
     </section>
-    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 bg-[#f5f5f5]">
+
+    <section class="bg-[#f5f5f5]">
+    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 bg-[#f5f5f5] max-w-[1170px] m-auto">
         <img class="m-[auto]  max-w-[70%] block lg:hidden" src="./assets/home-debug.svg" alt="">
         <div>
             <header class="text-[18px] lg:text-[30px] font-thin text-[#444] pb-[25px]">Print statement debugging is a thing of the past.</header>
@@ -126,7 +142,9 @@
         </div>
         <img class="m-[auto]   hidden lg:block" src="./assets/home-debug.svg" alt="">
     </section>
-    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36">
+    </section>
+
+    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 max-w-[1170px] m-auto">
         <img class="m-[auto]  max-w-[70%] block lg:hidden" src="./assets/home-git.svg" alt="">
         <div>
             <header class="text-[18px] lg:text-[30px] font-thin text-[#444] pb-[25px]">Git commands built-in.</header>
@@ -135,7 +153,9 @@
         <img class="m-[auto]   hidden lg:block " src="./assets/home-git.svg" alt="">
 
     </section>
-    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 bg-[#f5f5f5]">
+
+    <section class="bg-[#f5f5f5]">
+    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 bg-[#f5f5f5] max-w-[1170px] m-auto">
         <img class="w-[320px] h-[220px] max-w-[70%] hover:scale-110 hover:duration-700 block pb-[5px] lg:hidden m-[auto]" src="./assets/Hundreds-of-Extensions.png" alt="">
         <div>
             <header class="text-[18px] lg:text-[30px] font-thin text-[#444] pb-[25px]">Extensible and customizable.</header>
@@ -143,14 +163,18 @@
         </div>
         <img class="w-[320px]  h-[220px] hover:scale-110 hover:duration-700 hidden lg:block m-[auto]" src="./assets/Hundreds-of-Extensions.png" alt="">
     </section>
-    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36">
+    </section>
+
+    <section class="block  lg:flex text-[#444] px-[25px] py-[60px] justify-between gap-36 max-w-[1170px] m-auto">
         <img class="m-[auto] max-w-[70%] lg:max-w-[100%]" src="./assets/home-azure.svg" alt="">
         <div>
             <header class="text-[18px] lg:text-[30px] font-thin text-[#444] pb-[25px]">Deploy with confidence and ease</header>
             <p class="text-[15px] lg:text-[18px]">With <a class="text-[#0071bc] hover:underline" href="">Microsoft Azure</a>  you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease, <a class="text-[#0071bc] hover:underline" href="">all from within VS Code.</a> </p>
         </div>
     </section>
-    <section class="flex  flex-col items-center  bg-[#f5f5f5] py-[60px]">
+
+    <section class="bg-[#f5f5f5]">
+    <section class="flex  flex-col items-center  bg-[#f5f5f5] py-[60px] max-w-[1170px] m-auto">
         <header class="text-[#444] text-[18px] lg:text-[30px] font-thin pb-5">VS Code for</header>
         <ul class="grid grid-cols-2 grid-rows-6   sm:grid sm:grid-cols-6 sm:grid-rows-2 gap-[40px] p-5">
             <li class="text-[#444] text-[15px] lg:text-[18px] font-normal flex "><img src="./assets/javascript.svg" alt=""> JavaScript</li>
@@ -169,7 +193,9 @@
         <a class="text-[#0071bc] text-[15px] lg:text-[18px] pb-10 hover:underline" href="">and many more languages on the Marketplace...</a>
         <button class="bg-[#0066b8] hover:bg-[#005BA4] text-[20px] font-semibold p-3 text-white">Get Started Now</button>
     </section>
-    <section class="block  sm:flex justify-center gap-12 py-14">
+    </section>
+
+    <section class="block  sm:flex justify-center gap-12 py-14 max-w-[1170px] m-auto">
         <div class="py-[10px] flex flex-col items-center ">
             <img class="w-[100px] h-[100px] " src="./assets/windows-logo.png" alt="">
             <button class="bg-[#0066b8] hover:bg-[#005BA4] text-white px-14 py-3 m-4">
@@ -323,8 +349,10 @@
             </table> -->
         </div>
     </section>
+
+
     <section class="bg-[#f5f5f5]">
-        <div class=" hidden  block lg:flex justify-around py-9">
+        <div class=" hidden  block lg:flex justify-around py-9 max-w-[1170px] m-auto">
             <span class="  py-[4rem] lg:py-[30px]">
                 <div class="text-[#444] font-semibold text-[18px] text-center lg:text-[23px] "> Want new features sooner?</div>
                 <div class="text-[#444] font-normal text-[20px] text-center"> Get the <a class="text-[#005BA4] hover:underline" href="">Insiders build</a>  instead.</div>
@@ -335,23 +363,25 @@
             </span>
         </div>
 
-        <span class="block lg:hidden px-[19%] py-[4rem] lg:py-[30px]">
+        <span class="block lg:hidden px-[19%] py-[4rem] lg:py-[30px] max-w-[1170px] m-auto">
             <div class="text-[#444] font-semibold text-[18px] lg:text-[23px] text-center"> Want new features sooner?</div>
             <div class="text-[#444] font-normal text-[20px] text-center"> Get the <a class="text-[#005BA4] hover:underline" href="">Insiders build</a>  instead.</div>
         </span>
-        <span class="block lg:hidden px-[19%] py-[4rem] lg:py-[30px]">
+        <span class="block lg:hidden px-[19%] py-[4rem] lg:py-[30px] max-w-[1170px] m-auto">
             <div class="text-[#444] font-semibold text-[18px] lg:text-[23px]   text-center "> Use <a class="text-[#005BA4] hover:underline" href="">vscode.dev</a>  for quick edits  online!</div>
             <div class="text-[#444] font-normal text-[20px] text-center"> GitHub, Azure Repos, and local files.</div>
         </span>
    
         
-        <div class="px-[19%] py-[4rem] lg:px-52 lg:py-5 text-center text-[#6c6c6c] leading-10 ">
+        <div class="px-[19%] py-[4rem] lg:px-52 lg:py-5 text-center text-[#6c6c6c] leading-10 max-w-[1170px] m-auto">
             <h4 class="font-semibold">LICENSE AND PRIVACY TERMS</h4>
             <p class="font-normal"> By downloading and using Visual Studio Code, you agree to the <a class="text-[#005BA4] hover:underline" href="">license terms</a>  and <a class="text-[#005BA4] hover:underline" href="">privacy statement.</a>  VS Code automatically sends telemetry data and crash dumps to help us improve the product. If you would prefer not to have this data sent please go see <a class="text-[#005BA4] hover:underline" href="">How to Disable Crash Reporting</a>  to learn how to disable it.</p>
             
         </div>
     </section>
-    <footer class="block lg:flex justify-between bg-[#333] text-white py-6 px-5">
+
+    <section class="bg-[#333]">
+    <footer class="block lg:flex justify-between bg-[#333] text-white py-6 px-5 max-w-[1170px] m-auto">
         <div class="flex gap-6 items-center py-[10px]">
             <div class="hidden sm:inline">Hello from Seattle. </div>
             <a class="hover:text-[#b4a0ff]" href="">Follow @code</a>
@@ -374,6 +404,7 @@
             </div>
         </div>
     </footer>
+    </section>
 </body>
 </html>
 
