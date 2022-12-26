@@ -13,15 +13,19 @@
             list-style: none;
             font-family: sans-serif;
         }
+        body{
+            overflow-x: hidden;
+        }
         .part-2{
-            background: url("./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png"),url("./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png");
+            /* background-image: url("./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png"),url("./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png"); */
             background-color: black;
-            width: 100vw;
-            height: 100vh;
-            /* border: 2px solid red; */
-            background-repeat: no-repeat;
             /* background-size: contain; */
-            background-position: center;
+            /* background-position: center; */
+            /* width: 100vw;
+            height: 100vh; */
+            /* border: 2px solid red; */
+            /* background-repeat: no-repeat; */
+            /* background-size: contain; */
         }
         .part-1{
             background-color: black;
@@ -35,7 +39,7 @@
             color: white;
             padding: 30px ;
             align-items: center;
-            max-width: 950px;
+            /* max-width: 950px; */
             margin: auto;
         }
         .nav-logoImg img{
@@ -75,12 +79,13 @@
         .sec1{
             color: white;
             padding: 30px;
-            max-width: 950px;
+            /* max-width: 950px; */
             margin: auto;
         }
         .sec1-heading{
             font-size: 60px;
             padding: 20px 0;
+            font-weight: 300;
         }
         .sec1-heading span{
             color: rgb(228, 24, 228);
@@ -93,7 +98,7 @@
         }
         .sec1-btn{
             font-size: 16px;
-            padding: 20px 0;
+            padding: 50px 0;
         }
 
         .sec1-bottom{
@@ -118,22 +123,29 @@
         }
         
         
-        /* .sec1-card img{
+       .sec1-card{
+            position: relative;
+            top: -539px;
+            left: 170px;
+       }
+       .sec1-card .sec1-card-light{
             position: absolute;
-            width: 600px;
-            bottom: 0px;
-        }
-        .sec1-card-dark{
-            left: 680px;
-            
-        }
-        .sec1-card-light{
-            left: 540px;
-        } */
+            /* left: 330px; */
+            left: 90px;
+            top: 11px;
+            width: 55%;
+       }
+       .sec1-card .sec1-card-dark{
+            position: absolute;
+            left: 228px;
+            top: 55px;
+            width: 55%;
+       }
     </style>
 </head>
 <body>
 
+    <!-- navigation part -->
     <section class="part-1">
         <nav class="nav">
             <div class="nav-logoImg"><img src="./Project 1- Credit Card Landing Page/Assets/Icons/Logo.svg" alt=""></div>
@@ -168,7 +180,7 @@
                 GET STARTED
                 <img src="./Project 1- Credit Card Landing Page/Assets/Icons/RightArrow.svg" alt="">
             </button>
-
+            
             <div class="sec1-bottom">
                 <div class="sec1-bottom-user">
                     <span class="sec1-count">42K<span class="sec1-plus">+</span></span>
@@ -183,8 +195,8 @@
             </div>
 
             <div class="sec1-card">
-                <!-- <img class="sec1-card-light" src="./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png" alt="">
-                <img class="sec1-card-dark" src="./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png" alt=""> -->
+                <img class="sec1-card-light" src="./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png" alt="">
+                <img class="sec1-card-dark" src="./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png" alt="">
             </div>
         </section>
     </section>
