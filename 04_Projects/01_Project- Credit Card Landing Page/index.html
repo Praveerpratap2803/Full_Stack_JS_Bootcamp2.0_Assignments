@@ -15,6 +15,9 @@
         }
         body{
             overflow-x: hidden;
+            margin: auto;
+            max-width: 1200px;
+            background-color: black;
         }
         .part-2{
             /* background-image: url("./Project 1- Credit Card Landing Page/Assets/Photos/backCards.png"),url("./Project 1- Credit Card Landing Page/Assets/Photos/frontCards.png"); */
@@ -82,6 +85,7 @@
             padding-bottom: 80px;
             max-width: 1200px;
             margin: auto;
+            overflow: hidden;
         }
         .sec1-heading{
             font-size: 60px;
@@ -242,30 +246,170 @@
        .sec4{
             max-width: 1200px;
             margin: auto;
+            padding: 100px 25px;
        }
        .sec4-heading{
             color: white;
             font-size: 50px;
             font-weight: 400;
+            width: 700px;
+            margin: auto;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0 300px;
-            text-align: center;
             flex-direction: column;
+            text-align: center;
             line-height: 60px;
        }
        .sec4-para{
-        color: #D9CED8;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 300px;
-        text-align: center;
-        color: #D9CED8;
-        padding-top: 30px;
+            color: #D9CED8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 360px 90px 360px;
+            text-align: center;
+            color: #D9CED8;
+            padding-top: 30px;
         
        }
+       .sec4-allCards{
+            display: grid;
+            grid-template-columns: 42% 42%;
+            justify-content: center;
+            gap: 100px;
+       }
+       .sec4-cards{
+            color: white;
+            background-color: #1E1F24;
+            border: 1px solid white;
+            display: grid;
+            padding: 25px;
+       }
+       .cards-para{
+        padding: 30px 0;
+       }
+       .sec4-slides{
+            display: flex;
+            padding: 100px 0 150px;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+       }
+       .sec4-pinkDot{
+            width: 100px;
+            background-color: rgb(228, 24, 228);
+            border-radius: 10px;
+            height: 20px;
+       }
+       .sec4-dot{
+            width: 20px;
+            background-color: #1E1F24;
+            border-radius: 10px;
+            height: 20px;
+       }
+       /* .part-5{
+
+       } */
+       .sec5{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        position: relative;
+        height: 400px;
+       }
+       .sec5-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        padding-top: 35px;
+
+       }
+       .sec5-heading{
+            color: white;
+            font-size: 50px;
+            font-weight: 600;
+            width: 660px;
+            margin: auto;
+            line-height: 60px;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+       }
+       .black{
+        color: black;
+       }
+       .sec5-btn{
+            font-size: 16px;
+            padding: 50px 0;
+            background-color: transparent;
+            color: white;
+            border: none;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .sec5-btn img{
+            position: relative;
+            left: 19px;
+        }
+        .sec5-pinkbg{
+            background-color: rgb(228, 24, 228);
+            width: 100%;
+            height: 300px;
+            transform: rotate(-4deg);
+            position: absolute;
+        }
+        .sec5-graybg{
+            background-color: gray;
+            width: 100%;
+            height: 300px;
+            transform: rotate(3deg);
+            position: absolute;
+            opacity: 0.5;
+        }
+        .sec5-diamondimg{
+            width: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sec5-diamondimg img:nth-child(1){
+            height:300px;
+            position: relative;
+            bottom: -25px;
+            left: -25px;
+            transform: scaleX(-1);
+        }
+        .sec5-diamondimg img:nth-child(2){
+            height: 300px;
+            position: relative;
+            top: -15px;
+            transform: scaleX(-1);
+
+        }
+
+        .part7{
+            background-color: black;
+        }
+        .foot{
+            max-width: 1200px;
+            color: white;
+            display: flex;
+            gap: 250px;
+            align-items: center;
+            padding: 30px;
+        }
+        .foot-middle ul{
+            display: flex;
+            gap: 20px;
+        }
+        .foot-logoImg{
+            width: 100px;
+        }
     </style>
 </head>
 <body>
@@ -372,9 +516,9 @@
 
     <section class="part-5">
         <div class="sec4">
-            <h3 class="sec4-heading">Customers are satisfied with <span class="pink"> the features </span> we provide </h3>
+            <h3 class="sec4-heading"> <span> Customers are satisfied with </span> <span> <span class="pink"> the features </span> we provide </span> </h3>
             <p class="sec4-para">With the various features that we provide, therefore many customers like the features that we provide.</p>
-            <div>
+            <div class="sec4-allCards">
                 <section class="sec4-cards">
                     <img class="cards-star" src="./Project 1- Credit Card Landing Page/Assets/Icons/5stars.svg" alt="">
                     <p class="cards-para">This is the best finance platform I've ever found, lots of features that definitely make me more satisfied</p>
@@ -401,7 +545,51 @@
                     <div class="cards-loca">Wangon, Indonesia</div>
                 </section>
             </div>
+            <div class="sec4-slides">
+                <div class="sec4-pinkDot"></div>
+                <div class="sec4-dot"></div>
+                <div class="sec4-dot"></div>
+                <div class="sec4-dot"></div>
+            </div>
         </div>
+    </section>
+
+    <section class="part-6">
+        <div class="sec5">
+            <div class="sec5-pinkbg"></div>
+            <div class="sec5-graybg"></div>
+            <div class="sec5-diamondimg">
+                <img src="./Project 1- Credit Card Landing Page/Assets/Photos/Diamond-left.png" alt="">
+                <img src="./Project 1- Credit Card Landing Page/Assets/Photos/Diamond-right.png" alt="">
+            </div>
+            <div class="sec5-text">
+                <h2 class="sec5-heading"> <span> Let's start <span class="black"> customing </span> your </span> card now</h2>
+                <button class="sec5-btn">
+                    <img src="./Project 1- Credit Card Landing Page/Assets/Icons/btn-pink-bg.svg" alt="">
+                    GET STARTED
+                    <img src="./Project 1- Credit Card Landing Page/Assets/Icons/RightArrow.svg" alt="">
+                </button>
+            </div>
+                
+        </div>
+        
+    </section>
+
+
+
+
+    <section class="part7">
+        <footer class="foot">
+            <div class="foot-logoImg"><img src="./Project 1- Credit Card Landing Page/Assets/Icons/Logo.svg" alt=""></div>
+            <div class="foot-middle">
+                <ul>
+                    <li>Branding</li>
+                    <li>Contact Us</li>
+                    <li>PrivacyPolocy</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+        </footer>
     </section>
 </body>
 </html>
