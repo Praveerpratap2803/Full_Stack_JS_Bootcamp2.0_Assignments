@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            list-style: none;
+            font-family: sans-serif;
+        }
+        
+        .nav{
+            background-color: black;
+            max-width: 1200px;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            padding: 1em 5em;
+        }
+        .nav-logo{
+            width: 120px;
+        }
+        .nav-middle{
+            display: flex;
+            gap: 20px;
+            color: #A09F9F;
+            align-items: center;
+        }
+        .nav-btn{
+            background-color: #0C8BFD;
+            color: white;
+            padding: 1em 1.5em;
+            border: none;
+            border-radius: 1.5em;
+            font-weight: bold;
+        }
+
+        .part1{
+            padding: 4em 5em;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .part1-sec1{
+            width: 39%;
+        }
+        .part1-heading{
+            font-size: 3rem;
+            color: white;
+            line-height: 1.5em;
+        }
+        .blue{
+            color: #0C8BFD;
+            font-style: italic;
+        }
+        .part1-para{
+            color: #A09F9F;
+            font-size: 1.01rem;
+            padding: 2rem 0;
+            line-height: 1.5em;
+        }
+        .part1-btn1{
+            border-radius: 1.5em;
+            background-color: #0C8BFD;
+            color: white;
+            padding: 1em 1.5em;
+            border: 1px solid #0C8BFD;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .part1-btn2{
+            border-radius: 1.5em;
+            background-color: transparent;
+            color: white;
+            padding: 1em 1.5em;
+            border: 1px solid white;
+            font-weight: bold;
+        }
+        .part1-sec2{
+            display: flex;
+            justify-content: end;
+        }
+        .part1-sec2 img:nth-child(1){
+            width: 80%;
+        }
+
+
+        .part2{
+            display: flex;
+            gap: 130px;
+            background-color: #1D1C1C;
+            margin: auto;
+            max-width: 1200px;
+            justify-content: center;
+            padding: 1.5em;
+        }
+        .part2-img{
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="nav">
+        <img class="nav-logo" src="./Project-2 Hosting Site/assets/Logo.svg" alt="">
+        <ul class="nav-middle">
+            <li>Hosting</li>
+            <li>Domain</li>
+            <li>Features</li>
+            <li>Support</li>
+            <li>Community</li>
+        </ul>
+        <button class="nav-btn">Login</button>
+    </nav>
+
+    <section class="part1">
+        <div class="part1-sec1">
+            <h1 class="part1-heading">The best and <span class="blue"> cheapest </span> hosting for your website</h1>
+            <p class="part1-para">Hosting your website here is easy, access is fast, server security is very well maintained, and of course supported by reliable servers.</p>
+            <button class="part1-btn1">Get Started</button>
+            <button class="part1-btn2">Try Start Free</button>
+        </div>
+        <div class="part1-sec2">
+            <img class="part1-img" src="./Project-2 Hosting Site/assets/Illustrations/Group 238502.svg" alt="">
+        </div>
+    </section>
+    <section class="part2">
+        <img class="part2-img" src="Project-2 Hosting Site/assets/Logo-light.svg" alt="">
+        <img class="part2-img" src="Project-2 Hosting Site/assets/Logo-light.svg" alt="">
+        <img class="part2-img" src="Project-2 Hosting Site/assets/Logo-light.svg" alt="">
+        <img class="part2-img" src="Project-2 Hosting Site/assets/Logo-light.svg" alt="">
+    </section>
+
+    
+</body>
+</html>
